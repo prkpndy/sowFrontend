@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://sow-backend-prakhar-pandeys-projects.vercel.app",
+  baseURL: "https://sowbackend-production.up.railway.app",
 });
 
 export default axiosInstance;

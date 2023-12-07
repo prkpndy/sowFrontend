@@ -27,7 +27,7 @@ import axiosInstance from "../../api/axios";
 //   return translatedData;
 // }
 
-export default function Page() {
+export default function TermsPage() {
   // const translatedData = getData();
 
   const [translatedData, setTranslatedData] = useState({});
@@ -108,7 +108,6 @@ export default function Page() {
           )}
         </div>
 
-        {/* <div className="he-between text-center py-6"> */}
         <div className="text-center my-5 py-6">
           <button
             className="px-10 text-white bg-[#089e1e] py-3 rounded-full text-lg font-[600]"
@@ -118,10 +117,6 @@ export default function Page() {
           </button>
         </div>
       </section>
-
-      {/* <div>
-        <Footer />
-        </div> */}
     </section>
   );
 }

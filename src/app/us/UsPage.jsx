@@ -26,7 +26,7 @@ import "./index.css";
 //   return translatedData;
 // }
 
-export default function Page() {
+export default function UsPage() {
   // const translatedData = getData();
 
   const [translatedData, setTranslatedData] = useState({});

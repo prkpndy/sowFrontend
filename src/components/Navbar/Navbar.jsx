@@ -9,6 +9,7 @@ import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 import axiosInstance from "../../api/axios";
 
 import "./navbar.css";
+import logo from "../../assets/logo.png";
 
 // function getLanguageData() {
 //   const data = {
@@ -189,11 +190,7 @@ export default function Navbar() {
         <section className="flex place-content-between">
           <div className="logoa">
             <Link to="/">
-              <img
-                src={navigationData?.logo?.link}
-                alt=""
-                className="h-8 -mt-2"
-              />
+              <img src={logo} alt="" className="h-8 -mt-2" />
             </Link>
           </div>
 

@@ -62,7 +62,7 @@ import "./index.css";
 //   return translatedData;
 // }
 
-export default function Page() {
+export default function PriceListPage() {
   // const translatedData = getTranslatedData();
 
   const [translatedData, setTranslatedData] = useState({});

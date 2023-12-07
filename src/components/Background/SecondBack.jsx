@@ -1,10 +1,9 @@
+import bgimage from "../../assets/background.jpg";
+
 export default function SecondBack() {
-  const config = {
-    image: "https://storage.123fakturere.no/public/wallpapers/geiranger.jpg",
-  };
   return (
     <>
-      {config.image ? (
+      {bgimage ? (
         <div
           style={{
             position: "fixed",
@@ -13,7 +12,7 @@ export default function SecondBack() {
         >
           <img
             id="background-img"
-            src={config.image}
+            src={bgimage}
             alt={""}
             style={{
               width: "100%",

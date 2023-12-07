@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IconPlaylistAdd } from "@tabler/icons-react";
 
 export default function NewProduct({ translatedData, text, py, height, px }) {
-  const [opened, { close, open }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
   const [productData, setProductData] = useState({
     article_number: null,
     name: null,
@@ -25,6 +25,8 @@ export default function NewProduct({ translatedData, text, py, height, px }) {
 
   // Not sending the product to the server as it is for testing
   const handleSubmit = async (event) => {
+    event.preventDefault();
+    close();
     console.log("Product added");
   };
 

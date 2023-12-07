@@ -1,11 +1,12 @@
 "use client";
 
 import "./languageDropdown.css";
+import englishLogo from "../../assets/logo.png";
 
 export default function LanguageDropdown() {
   const selectedOption = {
     name: "English",
-    icon: "https://storage.123fakturere.no/public/flags/GB.png",
+    icon: englishLogo,
   };
 
   return (

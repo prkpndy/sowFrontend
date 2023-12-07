@@ -8,6 +8,7 @@ export default function AdvancedMode({ translatedData }) {
   const [opened, { open, close }] = useDisclosure(false);
 
   const handleModeChange = (mode) => {
+    close();
     console.log(`Mode has been changed to ${mode}`);
   };
 
@@ -70,21 +71,21 @@ export default function AdvancedMode({ translatedData }) {
           <Center>
             <Group className="mt-8 pb-5 ssd-gsd">
               <Button
-                className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-6"
+                className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-3"
                 radius={50}
                 onClick={() => handleModeChange("ordinary")}
               >
                 {translatedData?.price_list?.ordinary_mode}
               </Button>
               <Button
-                className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-6"
+                className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-3"
                 radius={50}
                 onClick={() => handleModeChange("unit")}
               >
                 {translatedData?.price_list?.advanced_mode_unit}
               </Button>
               <Button
-                className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-6"
+                className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-3"
                 radius={50}
                 onClick={() => handleModeChange("full")}
               >
@@ -94,7 +95,7 @@ export default function AdvancedMode({ translatedData }) {
           </Center>
         </div>
 
-        {/* <div className="px-8 ssd-gsd-2 pb-8 w-[100%]">
+        <div className="px-8 ssd-gsd-2 pb-8 w-[100%]">
           <Center mt={"lg"}>
             <Button
               w={"100%"}
@@ -125,7 +126,7 @@ export default function AdvancedMode({ translatedData }) {
               {translatedData?.price_list?.advanced_mode_full}
             </Button>
           </Center>
-        </div> */}
+        </div>
       </Modal>
       <div
         onClick={() => {

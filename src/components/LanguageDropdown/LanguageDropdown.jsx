@@ -1,7 +1,7 @@
 "use client";
 
 import "./languageDropdown.css";
-import englishLogo from "../../assets/logo.png";
+import englishLogo from "../../assets/english.png";
 
 export default function LanguageDropdown() {
   const selectedOption = {

@@ -11,10 +11,7 @@ export default function LanguageDropdown() {
 
   return (
     <div style={{ fontWeight: "550", fontSize: "15px" }}>
-      <div
-        id="dropdownContainer"
-        className="flex justify-between cursor-pointer gap-flag-con gap-4"
-      >
+      <div className="flex justify-between cursor-pointer gap-flag-con gap-4">
         <p className=" flag-name">{selectedOption?.name}</p>
         <img
           src={selectedOption?.icon}

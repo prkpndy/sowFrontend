@@ -1,4 +1,5 @@
 .search-article {
+  width: 25rem;
   border: 1px solid #ccc;
 }
 
@@ -101,8 +102,8 @@
   }
 
   .main-price-list-container{
-      width: 95%;
-      padding-left: 10px;
+      width: 100%;
+      padding-inline: 5%;
   }
 
   .show-mb-dis{
@@ -170,7 +171,7 @@
   }
 
   .item-menu-pc{
-      display: none;
+      display: block;
   }
 
   .call-pricelist-height{
@@ -179,7 +180,7 @@
 
 }
 
-@media only screen and (min-width: 591px) and (max-width: 767px) {
+@media only screen and (min-width: 591px) and (max-width: 850px) {
   .menu-side-bar{
       display: none;
       width: 0%;
@@ -255,12 +256,12 @@
   }
 
   .item-menu-pc{
-      display: none;
+      display: block;
   }
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1260px) {
+@media only screen and (min-width: 851px) and (max-width: 1260px) {
   .menu-side-bar{
       display: none;
       width: 0%;
@@ -329,7 +330,7 @@
   }
 
   .item-menu-pc{
-      display: none;
+      display: block;
   }
 }
 
@@ -349,7 +350,7 @@
   }
 
   .search-article {
-      /* width: 100%; */
+      width: 20rem;
       border: 1px solid #ccc;
   }
 

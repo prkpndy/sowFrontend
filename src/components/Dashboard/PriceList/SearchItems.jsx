@@ -16,9 +16,9 @@ export default function SearchItems({ translatedData }) {
   };
 
   return (
-    <div className="psd-1">
+    <div>
       <form
-        className="flex search-article w-[25rem] py-1 rounded-xl"
+        className="flex search-article py-1 rounded-xl"
         onSubmit={(event) => handleSearch(event, articleTerm, "article")}
         noValidate
       >
@@ -41,7 +41,7 @@ export default function SearchItems({ translatedData }) {
       </form>
 
       <form
-        className="flex search-article w-[25rem] py-1 rounded-xl mt-2"
+        className="flex search-article py-1 rounded-xl mt-2"
         onSubmit={(event) => handleSearch(event, searchTerm, "title")}
         noValidate
       >

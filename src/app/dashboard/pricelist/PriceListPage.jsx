@@ -290,7 +290,7 @@ export default function PriceListPage() {
                     <div className="px-2 ml-8 show-mb-dis">
                       {translatedData?.price_list?.unit}
                     </div>
-                    <div className="col-span-2 px-1 px-2 ml-8 show-mb-dis">
+                    <div className="col-span-2 px-2 ml-8 show-mb-dis">
                       {translatedData?.price_list?.description}
                     </div>
                   </div>

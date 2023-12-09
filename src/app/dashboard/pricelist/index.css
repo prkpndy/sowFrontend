@@ -78,6 +78,7 @@
 
 .scrollbarWidth{
   overflow-y: auto;
+  height: 55vh;
   scrollbar-width: none;
   /* -webkit-scrollbar-width: none; */
 

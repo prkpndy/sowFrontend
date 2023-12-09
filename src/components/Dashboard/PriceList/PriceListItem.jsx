@@ -1,27 +1,9 @@
 import { Text } from "@mantine/core";
-import InfiniteScroll from "react-infinite-scroll-component";
 import { BsThreeDots } from "react-icons/bs";
-
-import ComponentLoader from "./ComponentLoader";
-// import ItemMenu from "./ItemMenu";
-// import MobileItemMenu from "./MobileItemMenu";
 
 export default function PriceListItem({ fetchMoreData, hasMore, items }) {
   return (
-    <InfiniteScroll
-      dataLength={items.length}
-      next={fetchMoreData}
-      hasMore={hasMore}
-      loader={<ComponentLoader />}
-      scrollThreshold={0.5}
-      refreshFunction={fetchMoreData}
-      scrollableTarget="scrollableDiv"
-      endMessage={
-        <p style={{ textAlign: "center", marginTop: "8px" }}>
-          {hasMore ? "Loading..." : ""}
-        </p>
-      }
-    >
+    <div>
       {items.map((item) => (
         <section className="flex gap-2 " key={item.id}>
           <div className="grid-9 gap-2 mt-2 w-[100%] text-[#1A1A1A] text-sm">
@@ -88,6 +70,6 @@ export default function PriceListItem({ fetchMoreData, hasMore, items }) {
           </div> */}
         </section>
       ))}
-    </InfiniteScroll>
+    </div>
   );
 }

@@ -306,7 +306,7 @@ export default function PriceListPage() {
                   <div
                     id="scrollableDiv"
                     ref={scrollableDivRef}
-                    className="scrollbarWidth h-[90vh]"
+                    className="scrollbarWidth"
                   >
                     <PriceListItem
                       fetchMoreData={fetchMoreData}

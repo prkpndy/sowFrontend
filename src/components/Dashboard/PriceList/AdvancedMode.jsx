@@ -73,21 +73,27 @@ export default function AdvancedMode({ translatedData }) {
               <Button
                 className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-3"
                 radius={50}
-                onClick={() => handleModeChange("ordinary")}
+                onClick={() => {
+                  handleModeChange("ordinary");
+                }}
               >
                 {translatedData?.price_list?.ordinary_mode}
               </Button>
               <Button
                 className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-3"
                 radius={50}
-                onClick={() => handleModeChange("unit")}
+                onClick={() => {
+                  handleModeChange("unit");
+                }}
               >
                 {translatedData?.price_list?.advanced_mode_unit}
               </Button>
               <Button
                 className="px-6 py-2 bg-[#0f7ee9] text-white rounded-[40px] mx-3"
                 radius={50}
-                onClick={() => handleModeChange("full")}
+                onClick={() => {
+                  handleModeChange("full");
+                }}
               >
                 {translatedData?.price_list?.advanced_mode_full}
               </Button>
@@ -101,7 +107,9 @@ export default function AdvancedMode({ translatedData }) {
               w={"100%"}
               className=" bg-[#0f7ee9] text-white rounded-[40px]"
               radius={50}
-              onClick={() => handleModeChange("ordinary")}
+              onClick={() => {
+                handleModeChange("ordinary");
+              }}
             >
               {translatedData?.price_list?.ordinary_mode}
             </Button>
@@ -111,7 +119,9 @@ export default function AdvancedMode({ translatedData }) {
               w={"100%"}
               className="py-2 bg-[#0f7ee9] text-white rounded-[40px]"
               radius={50}
-              onClick={() => handleModeChange("unit")}
+              onClick={() => {
+                handleModeChange("unit");
+              }}
             >
               {translatedData?.price_list?.advanced_mode_unit}
             </Button>
@@ -121,7 +131,9 @@ export default function AdvancedMode({ translatedData }) {
               w={"100%"}
               className="px-8 py-2 bg-[#0f7ee9] text-white rounded-[40px]"
               radius={50}
-              onClick={() => handleModeChange("full")}
+              onClick={() => {
+                handleModeChange("full");
+              }}
             >
               {translatedData?.price_list?.advanced_mode_full}
             </Button>

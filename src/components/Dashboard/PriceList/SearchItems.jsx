@@ -19,7 +19,9 @@ export default function SearchItems({ translatedData }) {
     <div>
       <form
         className="flex search-article py-1 rounded-xl"
-        onSubmit={(event) => handleSearch(event, articleTerm, "article")}
+        onSubmit={(event) => {
+          handleSearch(event, articleTerm, "article");
+        }}
         noValidate
       >
         <input
@@ -30,19 +32,25 @@ export default function SearchItems({ translatedData }) {
           id="article"
           value={articleTerm}
           placeholder={translatedData?.price_list?.search_article_number}
-          onChange={(event) => setArticleTerm(event.target.value)}
+          onChange={(event) => {
+            setArticleTerm(event.target.value);
+          }}
         />
         <IconSearch
           color="#44dcff"
           className="cursor-pointer"
           size={25}
-          onClick={() => handleIconSearchClick(articleTerm, "article")}
+          onClick={() => {
+            handleIconSearchClick(articleTerm, "article");
+          }}
         />
       </form>
 
       <form
         className="flex search-article py-1 rounded-xl mt-2"
-        onSubmit={(event) => handleSearch(event, searchTerm, "title")}
+        onSubmit={(event) => {
+          handleSearch(event, searchTerm, "title");
+        }}
         noValidate
       >
         <input
@@ -53,13 +61,17 @@ export default function SearchItems({ translatedData }) {
           id="title"
           value={searchTerm}
           placeholder={translatedData?.price_list?.search_product}
-          onChange={(event) => setSearchTerm(event.target.value)}
+          onChange={(event) => {
+            setSearchTerm(event.target.value);
+          }}
         />
         <IconSearch
           color="#44dcff"
           size={25}
           className="cursor-pointer"
-          onClick={() => handleIconSearchClick(searchTerm, "title")}
+          onClick={() => {
+            handleIconSearchClick(searchTerm, "title");
+          }}
         />
       </form>
     </div>

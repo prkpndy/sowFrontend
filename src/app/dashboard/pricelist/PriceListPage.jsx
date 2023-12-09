@@ -105,7 +105,9 @@ export default function PriceListPage() {
     axiosInstance(`/pricelist/${0}`)
       .then((response) => {
         setItems(response.data?.data);
-        setIndex((prevIndex) => prevIndex + 2);
+        setIndex((prevIndex) => {
+          return prevIndex + 2;
+        });
         setIsLoading(false);
       })
       .catch((error) => {
@@ -153,8 +155,12 @@ export default function PriceListPage() {
   const fetchMoreData = () => {
     axiosInstance(`pricelist${index}`)
       .then((response) => {
-        setItems((prevItems) => [...prevItems, ...response.data?.data]);
-        setIndex((prevIndex) => prevIndex + 2);
+        setItems((prevItems) => {
+          return [...prevItems, ...response.data?.data];
+        });
+        setIndex((prevIndex) => {
+          return prevIndex + 2;
+        });
         response.data?.data.length > 1 ? setHasMore(true) : setHasMore(false);
       })
       .catch((error) => {
@@ -244,7 +250,9 @@ export default function PriceListPage() {
 
                     <div
                       className="flex gap-2 px-4 py-2 rounded-xl shadow-md text-[#808080] h-10 cursor-pointer btn-text-price"
-                      onClick={() => console.log("Print clicked")}
+                      onClick={() => {
+                        console.log("Print clicked");
+                      }}
                     >
                       <button className="text-[#1A1A1A] mb-text">
                         {translatedData?.price_list?.print_list}

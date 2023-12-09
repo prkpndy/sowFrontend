@@ -19,8 +19,12 @@ export default function NewProduct({ translatedData, text, py, height, px }) {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setProductData((prev) => ({ ...prev, [name]: value }));
-    setError((prev) => ({ ...prev, [name]: "" }));
+    setProductData((prev) => {
+      return { ...prev, [name]: value };
+    });
+    setError((prev) => {
+      return { ...prev, [name]: "" };
+    });
   };
 
   // Not sending the product to the server as it is for testing

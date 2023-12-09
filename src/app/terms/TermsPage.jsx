@@ -81,20 +81,24 @@ export default function TermsPage() {
                 )}
               />
 
-              {Array.from({ length: 2 }, (_, index) => (
-                <p key={index} className="">
-                  {translatedData?.terms?.[`terms_text_${index + 2}`]}
-                </p>
-              ))}
+              {Array.from({ length: 2 }, (_, index) => {
+                return (
+                  <p key={index} className="">
+                    {translatedData?.terms?.[`terms_text_${index + 2}`]}
+                  </p>
+                );
+              })}
 
               <p className="mt-6">{translatedData?.terms?.terms_text_4}</p>
               <p className="mb-6">{translatedData?.terms?.terms_text_5}</p>
 
-              {Array.from({ length: 14 }, (_, index) => (
-                <p key={index} className="">
-                  {translatedData?.terms?.[`terms_text_${index + 6}`]}
-                </p>
-              ))}
+              {Array.from({ length: 14 }, (_, index) => {
+                return (
+                  <p key={index} className="">
+                    {translatedData?.terms?.[`terms_text_${index + 6}`]}
+                  </p>
+                );
+              })}
               <p>
                 {renderDynamicLinks(translatedData?.terms?.terms_text_20, true)}
               </p>
